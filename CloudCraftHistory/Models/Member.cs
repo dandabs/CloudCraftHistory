@@ -9,6 +9,8 @@ namespace CloudCraftHistory.Models
         /* Personal Information */ 
         public int ID { get; set; }
         public string Username { get; set; }
+
+        [Display(Name = "Name")]
         public string PreferredName { get; set; }
         public string Country { get; set; }
 
@@ -35,13 +37,21 @@ namespace CloudCraftHistory.Models
         public string Phone { get; set; }
 
         /* Years Played */
+        [Display(Name = "2014")]
         public int fourteen { get; set; }
+        [Display(Name = "2015")]
         public int fifteen { get; set; }
+        [Display(Name = "2016")]
         public int sixteen { get; set; }
+        [Display(Name = "2017")]
         public int seventeen { get; set; }
+        [Display(Name = "2018")]
         public int eighteen { get; set; }
+        [Display(Name = "2019")]
         public int nineteen { get; set; }
+        [Display(Name = "2020")]
         public int twenty { get; set; }
+        [Display(Name = "2021")]
         public int twentyone { get; set; }
 
     }
