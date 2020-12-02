@@ -19,7 +19,7 @@ namespace CloudCraftHistory.Models
         public String Languages { get; set; } /*comma-sep*/
 
         /* Server References */
-        public bool WasStaff { get; set; }
+        public int WasStaff { get; set; }
 
         [DataType(DataType.Date)]
         public DateTime JoinDate { get; set; }
@@ -35,14 +35,14 @@ namespace CloudCraftHistory.Models
         public string Phone { get; set; }
 
         /* Years Played */
-        public bool fourteen { get; set; }
-        public bool fifteen { get; set; }
-        public bool sixteen { get; set; }
-        public bool seventeen { get; set; }
-        public bool eighteen { get; set; }
-        public bool nineteen { get; set; }
-        public bool twenty { get; set; }
-        public bool twentyone { get; set; }
+        public int fourteen { get; set; }
+        public int fifteen { get; set; }
+        public int sixteen { get; set; }
+        public int seventeen { get; set; }
+        public int eighteen { get; set; }
+        public int nineteen { get; set; }
+        public int twenty { get; set; }
+        public int twentyone { get; set; }
 
     }
 }
