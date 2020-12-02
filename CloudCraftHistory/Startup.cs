@@ -9,6 +9,9 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
+using CloudCraftHistory.Data;
+using Microsoft.EntityFrameworkCore;
+
 using Microsoft.AspNetCore.HttpOverrides;
 
 namespace CloudCraftHistory
@@ -25,6 +28,9 @@ namespace CloudCraftHistory
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddDbContext<CloudCraftHistoryContext>(options =>
+            options.UseSqlite(Configuration.GetConnectionString("CloudCraftHistoryContext")));
+
             services.AddRazorPages();
         }
 

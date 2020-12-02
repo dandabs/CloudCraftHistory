@@ -16,7 +16,7 @@ namespace CloudCraftHistory.Models
         public DateTime Birthday { get; set; }
 
         /* Interesting Bits */
-        public string[] Languages { get; set; }
+        public String Languages { get; set; } /*comma-sep*/
 
         /* Server References */
         public bool WasStaff { get; set; }

@@ -1,0 +1,145 @@
+@page
+@model CloudCraftHistory.Pages.Directory.EditModel
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Member</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Member.ID" />
+            <div class="form-group">
+                <label asp-for="Member.Username" class="control-label"></label>
+                <input asp-for="Member.Username" class="form-control" />
+                <span asp-validation-for="Member.Username" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Member.PreferredName" class="control-label"></label>
+                <input asp-for="Member.PreferredName" class="form-control" />
+                <span asp-validation-for="Member.PreferredName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Member.Country" class="control-label"></label>
+                <input asp-for="Member.Country" class="form-control" />
+                <span asp-validation-for="Member.Country" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Member.Birthday" class="control-label"></label>
+                <input asp-for="Member.Birthday" class="form-control" />
+                <span asp-validation-for="Member.Birthday" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Member.Languages" class="control-label"></label>
+                <input asp-for="Member.Languages" class="form-control" />
+                <span asp-validation-for="Member.Languages" class="text-danger"></span>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Member.WasStaff" /> @Html.DisplayNameFor(model => model.Member.WasStaff)
+                </label>
+            </div>
+            <div class="form-group">
+                <label asp-for="Member.JoinDate" class="control-label"></label>
+                <input asp-for="Member.JoinDate" class="form-control" />
+                <span asp-validation-for="Member.JoinDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Member.Discord" class="control-label"></label>
+                <input asp-for="Member.Discord" class="form-control" />
+                <span asp-validation-for="Member.Discord" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Member.Skype" class="control-label"></label>
+                <input asp-for="Member.Skype" class="form-control" />
+                <span asp-validation-for="Member.Skype" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Member.Email" class="control-label"></label>
+                <input asp-for="Member.Email" class="form-control" />
+                <span asp-validation-for="Member.Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Member.Instagram" class="control-label"></label>
+                <input asp-for="Member.Instagram" class="form-control" />
+                <span asp-validation-for="Member.Instagram" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Member.Snapchat" class="control-label"></label>
+                <input asp-for="Member.Snapchat" class="form-control" />
+                <span asp-validation-for="Member.Snapchat" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Member.Reddit" class="control-label"></label>
+                <input asp-for="Member.Reddit" class="form-control" />
+                <span asp-validation-for="Member.Reddit" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Member.Twitter" class="control-label"></label>
+                <input asp-for="Member.Twitter" class="form-control" />
+                <span asp-validation-for="Member.Twitter" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Member.Phone" class="control-label"></label>
+                <input asp-for="Member.Phone" class="form-control" />
+                <span asp-validation-for="Member.Phone" class="text-danger"></span>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Member.fourteen" /> @Html.DisplayNameFor(model => model.Member.fourteen)
+                </label>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Member.fifteen" /> @Html.DisplayNameFor(model => model.Member.fifteen)
+                </label>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Member.sixteen" /> @Html.DisplayNameFor(model => model.Member.sixteen)
+                </label>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Member.seventeen" /> @Html.DisplayNameFor(model => model.Member.seventeen)
+                </label>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Member.eighteen" /> @Html.DisplayNameFor(model => model.Member.eighteen)
+                </label>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Member.nineteen" /> @Html.DisplayNameFor(model => model.Member.nineteen)
+                </label>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Member.twenty" /> @Html.DisplayNameFor(model => model.Member.twenty)
+                </label>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Member.twentyone" /> @Html.DisplayNameFor(model => model.Member.twentyone)
+                </label>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="./Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

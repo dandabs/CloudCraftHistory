@@ -1,0 +1,168 @@
+@page
+@model CloudCraftHistory.Pages.Directory.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Member[0].Username)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Member[0].PreferredName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Member[0].Country)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Member[0].Birthday)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Member[0].Languages)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Member[0].WasStaff)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Member[0].JoinDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Member[0].Discord)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Member[0].Skype)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Member[0].Email)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Member[0].Instagram)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Member[0].Snapchat)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Member[0].Reddit)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Member[0].Twitter)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Member[0].Phone)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Member[0].fourteen)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Member[0].fifteen)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Member[0].sixteen)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Member[0].seventeen)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Member[0].eighteen)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Member[0].nineteen)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Member[0].twenty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Member[0].twentyone)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Member) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Username)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PreferredName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Country)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Birthday)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Languages)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.WasStaff)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.JoinDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Discord)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Skype)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Instagram)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Snapchat)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Reddit)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Twitter)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Phone)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.fourteen)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.fifteen)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.sixteen)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.seventeen)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.eighteen)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.nineteen)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.twenty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.twentyone)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.ID">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.ID">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.ID">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

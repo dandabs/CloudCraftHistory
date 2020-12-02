@@ -1,0 +1,160 @@
+@page
+@model CloudCraftHistory.Pages.Directory.DeleteModel
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1>Delete</h1>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Member</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Member.Username)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Member.Username)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Member.PreferredName)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Member.PreferredName)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Member.Country)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Member.Country)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Member.Birthday)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Member.Birthday)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Member.Languages)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Member.Languages)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Member.WasStaff)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Member.WasStaff)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Member.JoinDate)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Member.JoinDate)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Member.Discord)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Member.Discord)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Member.Skype)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Member.Skype)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Member.Email)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Member.Email)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Member.Instagram)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Member.Instagram)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Member.Snapchat)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Member.Snapchat)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Member.Reddit)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Member.Reddit)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Member.Twitter)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Member.Twitter)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Member.Phone)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Member.Phone)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Member.fourteen)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Member.fourteen)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Member.fifteen)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Member.fifteen)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Member.sixteen)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Member.sixteen)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Member.seventeen)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Member.seventeen)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Member.eighteen)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Member.eighteen)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Member.nineteen)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Member.nineteen)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Member.twenty)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Member.twenty)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Member.twentyone)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Member.twentyone)
+        </dd>
+    </dl>
+    
+    <form method="post">
+        <input type="hidden" asp-for="Member.ID" />
+        <input type="submit" value="Delete" class="btn btn-danger" /> |
+        <a asp-page="./Index">Back to List</a>
+    </form>
+</div>
